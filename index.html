@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
+                                                                                                <!DOCTYPE html>
+<html id="skrollr-body">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -18,12 +19,12 @@
 				<h1 id="titleName">Grant McGovern.</h1>
 			</div>
 			<div class="subTitle">
-				<p>Coder.&emsp;&emsp;&emsp;&emsp;Builder.&emsp;&emsp;&emsp;&emsp;Learner.</p>
+				<p>Coder.&emsp;&emsp;&emsp;Builder.&emsp;&emsp;&emsp;Learner.</p>
 			</div>
 			<hr>
-			<div class="graphHolder">
-				<div id="log" style="width:100%; height:500px;"></div>
-			</div>
+			<!--<div id="container" style="height: 100%"></div>
+			<div id="chartOverflow"></div>-->
+			<div id="log" style="height:100%"></div>
 			<div class="graphSubText">
 				<a id="graphSubtext" href="https://github.com/g12mcgov/DevCharts">What is this? Checkout my project, DevCharts!</a>
 			</div>s
@@ -39,7 +40,7 @@
 							<b>Hi, I'm Grant.</b>
 						</p>
 						<p align="center" style="font-size: 22px;">
-							</b>I am obsessed with how thinks work.</b>
+							</b>I am obsessed with how things work.</b>
 						</p>
 						<hr>
 						<br>
@@ -50,7 +51,7 @@
 							I enjoy spicy foods, my favorite season is Winter, and I have an affinity for anything with wheels. I am from Washington, D.C., but my favorite city is Stockholm, Sweden.
 						</p>
 						<p align="left">
-							I have had the fortunate privilege of being taught by great mentors along my path of becoming a software 	developer. I have met incredible people through internships, and learned amazing things.
+							I have had the privilege of being taught by great mentors along my path of becoming a software 	developer. I have met incredible people through internships, and learned amazing things.
 						</p>
 						<p align="left">
 							My first love is Python, but at school I tend to write strictly in C++. I sometimes find myself writing HTML, CSS, and JavaScript, but I prefer a backend approach. I have worked with Scala and Java, though not in depth. I am a Mac OSX evangelist and really anything Unix of the sort.
@@ -179,20 +180,23 @@
 			  <div class="panel-body">
 			    <p align="center">Grant McGovern</p>
 			    <p align="center">Washington, D.C.</p>
-					<p align="center">+1 (301) 653-3550</p>
-					<a align="center" href="mailto:grantmcgov@gmail.com">grantmcgov@gmail.com</a>
+				<p align="center">+1 (301) 653-3550</p>
+				<a align="center" href="mailto:grantmcgov@gmail.com"><img src="img/mail.png" id="mailIcon"></a>
 			  </div>
 			</div>
 		</div>
 	</div>
 	<div class="footer">
-	<div class="container">
-		<p class="text-muted">A Grant McGovern Build.</p> 
-		<p class="text-muted">Made with a sprinkle of <span class="redheart" style="font-size:120%;">&hearts;</span> and a dallop of passion.</p>
-		<div class="socialIcons">
-			<a href="http://www.linkedin.com/in/grantmcgovern/"><img src="img/icons/Linkedin.png"></a><a href="https://github.com/g12mcgov"><img src="img/icons/Github-Icon.png"></a><a href="https://www.facebook.com/grantmcgovern"><img src="img/icons/facebook-Icon.png"></a><a href="http://instagram.com/g12mcgov"><img src="img/icons/Instagram-Icon.png"></a><a href="https://soundcloud.com/grant-mcgovern"><img src="img/icons/Soundcloud-Icon.png"></a><a href="http://grantmcgovern.wordpress.com/"><img src="img/icons/Wordpress-Icon.png"></a><a href="mailto:grantmcgov@gmail.com"><img src="img/icons/Email-Icon.png"></a>
+		<div class="container">
+			<p class="text-muted">A Grant McGovern Build.</p> 
+			<p class="text-muted">Made with a sprinkle of <span class="redheart" style="font-size:120%;">&hearts;</span> and a dallop of passion.</p>
+			<div class="AboutSite">
+				<a id="aboutSite" class="btn btn-link text-muted" data-toggle="popover" data-html="true" title="About This Site"data-content="This site is a Flask application hosted via A Small Orange.<br><br>It's front-end was written purely in HTML, CSS, and JavaScript, and it's backend component to update the chart at the top of the page is powered by Python.<br><br>It uses an SSL certificate provided by StartSSL to satisfy Dropbox API redirects.">About This Site</a>
+			</div>
+			<div class="socialIcons">
+				<a href="http://www.linkedin.com/in/grantmcgovern/"><img src="img/icons/Linkedin.png"></a><a href="https://github.com/g12mcgov"><img src="img/icons/Github-Icon.png"></a><a href="https://www.facebook.com/grantmcgovern"><img src="img/icons/facebook-Icon.png"></a><a href="http://instagram.com/g12mcgov"><img src="img/icons/Instagram-Icon.png"></a><a href="https://soundcloud.com/grant-mcgovern"><img src="img/icons/Soundcloud-Icon.png"></a><a href="http://grantmcgovern.wordpress.com/"><img src="img/icons/Wordpress-Icon.png"></a><a href="mailto:grantmcgov@gmail.com"><img src="img/icons/Email-Icon.png"></a>
+			</div>
 		</div>
-	</div>
 	</div>
  	<script src="//cdnjs.cloudflare.com/ajax/libs/dropbox.js/0.10.3/dropbox.min.js"></script>
  	<script type="text/javascript" src="js/DevChart/Highcharts-4.0.3/js/highcharts.js"></script>
@@ -203,5 +207,11 @@
  	<script type="text/javascript" src="js/FitText.js/jquery.fittext.js"></script>
  	<script type="text/javascript" src="js/fitTextActivation.js"></script>
  	<script type="text/javascript" src="js/highChartScrollPatch.js"></script>
+ 	<script type="text/javascript" src="js/aboutPopover.js"></script>
 </body>
 </html>
+
+                            
+                            
+
+                            

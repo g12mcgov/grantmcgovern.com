@@ -26,9 +26,58 @@ $(document).ready(function(){
     if (numbers_received.length >= 10){
         numbers_received.shift()
     }
+    
+    /*
+    var chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container',
+            plotBackgroundColor: null,
+            plotShadow: false,
+            backgroundColor:'rgba(255, 255, 255, 0)'
+        },
+        title: {
+            text: "" // Imported from config.js
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            series: {
+                enableMouseTracking: false
+            },
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.2f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'white'
+                    }
+                }
+            }
+        },
+        
+        series: [{
+            type: 'pie',
+            name: 'Code Construct',
+            data: dataArrayFinal        
+        }]
+    }, function(chart){
+        var c = $(chart.container);
+        $('#chartOverflow').css({
+            top: c.offset().top,
+            left: c.offset().left,
+            width: c.width(),
+            height: c.height() - c.height()       
+        });
+    });
+    */
 
+    
     $('#log').highcharts({
         chart: {
+            renderTo: 'container',
             plotBackgroundColor: null,
             plotShadow: false,
             backgroundColor:'rgba(255, 255, 255, 0)'
