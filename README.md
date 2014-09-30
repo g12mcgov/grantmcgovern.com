@@ -1,4 +1,4 @@
-grantmcgovern.com
+[grantmcgovern.com](http://www.grantmcgovern.com)
 =================
 
 My Personal Website
